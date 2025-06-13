@@ -1,0 +1,106 @@
+{
+  "sections_detected": [
+    "personal_info",
+    "experience",
+    "education",
+    "awards",
+    "skills",
+    "projects",
+    "other_highlights",
+    "hobbies"
+  ],
+  "missing_sections": [
+    "summary",
+    "certifications"
+  ],
+  "well_written_sections": [
+    "experience: clearly describes job responsibilities and achievements",
+    "education: provides relevant degree and institution information",
+    "skills: effectively categorizes and lists technical skills"
+  ],
+  "llm_evaluation": 7,
+  "skills_sentiment_summary": "strong technical skills",
+  "improvement_suggestions": [
+    "add a professional summary",
+    "include relevant certifications",
+    "quantify achievements in experience section",
+    "consider adding relevant tools or software to skills section",
+    "reorganize hobbies section to be more concise and impactful"
+  ],
+  "resume_data": {
+    "personal_info": {
+      "name": "John Doe",
+      "email": "johndoe@mailme.com",
+      "mobile": "+1 2345 6789",
+      "location": "New York, USA"
+    },
+    "experience": [
+      {
+        "title": "Senior Software Engineer",
+        "company": "Dream Company",
+        "duration": "August 1999 onwards",
+        "details": "Co-designer and co-implementor of five successive generations of Google\u2019s crawling indexing and query retrieval systems."
+      },
+      {
+        "title": "Senior Member of Technical Staff",
+        "company": "Old Dream Company",
+        "duration": "February 1999 to August 1999",
+        "details": "Designer and implementor of a system for retrieving and caching electronic commerce content including a crawler and custom full-text indexing system that allows flexible keyword searching of product information."
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Washington",
+        "degree": "Ph.D. Computer Science",
+        "year": 1996
+      },
+      {
+        "institution": "University of Minnesota",
+        "degree": "B.S. Computer Engineering",
+        "year": 1990
+      }
+    ],
+    "skills": [
+      "Golang",
+      "Python",
+      "C++",
+      "Tensorflow",
+      "Spanner",
+      "Bigtable",
+      "MapReduce",
+      "Google Cloud Platform",
+      "Protocol Buffers",
+      "Object Oriented Programming",
+      "Functional Programming",
+      "CI & CD",
+      "Microservices",
+      "Agile",
+      "Scrum",
+      "Google Bug Tracker",
+      "Google Workspace"
+    ],
+    "projects": [
+      {
+        "title": "Tensorflow",
+        "description": "An open-source machine-learning software library"
+      },
+      {
+        "title": "LevelDB",
+        "description": "An open-source on-disk key-value store"
+      },
+      {
+        "title": "Spanner",
+        "description": "A scalable, multi-version, globally distributed, and synchronously replicated database"
+      }
+    ]
+  },
+  "score_breakdown": {
+    "total_score": 70,
+    "content_completeness": 22.5,
+    "relevance_specificity": 25,
+    "achievements_impact": 0,
+    "skills_matching": 10,
+    "formatting_structure": 5,
+    "llm_evaluation": 7
+  }
+}

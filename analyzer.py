@@ -54,11 +54,17 @@ Analyze the following resume text and return a JSON with the following fields:
 - llm_evaluation: integer between 0 and 10
 - skills_sentiment_summary: short string
 - improvement_suggestions: list of short strings
+- resume_data: additionally, extract the resume into a nested JSON object with structured data using this (strict) schema:
+  - personal_info: name, email, mobile, location
+  - experience: only title, company, duration, details
+  - education: only institution, degree, year
+  - skills: list of technical and soft skills
+  - projects: only project titles and descriptions
 
 Resume text:
 \"\"\"
 {resume_text}
 \"\"\"
 
-Respond ONLY with a JSON object matching the above structure.
+Respond ONLY with a JSON object matching the above structure. Be slightly more critical in your analysis.
     """.strip()
