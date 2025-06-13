@@ -4,6 +4,7 @@ import argparse
 from parser import extract_text
 from analyzer import analyze_resume
 from scorer import compute_score
+from reporter import generate_pdf_report
 
 OUTPUT_DIR = "./outputs"
 
@@ -41,6 +42,9 @@ def process_resume(file_path, save_json=True, compute_scores=True, json_only=Fal
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(analysis, f, indent=2)
         print(f"\nAnalysis saved to: {out_path}")
+
+        report_path = os.path.join(OUTPUT_DIR, f"{out_name}_report.pdf")
+        generate_pdf_report(out_path, report_path)
 
     if not json_only and compute_scores:
         print(f"\nFinal Score: {score_breakdown['total_score']}/100")

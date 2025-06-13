@@ -3,29 +3,29 @@
     "personal_info",
     "experience",
     "education",
-    "awards",
+    "awards_recognition",
     "skills",
     "projects",
     "other_highlights",
-    "hobbies"
+    "hobbies_interests"
   ],
   "missing_sections": [
-    "summary",
-    "certifications"
+    "summary_objective",
+    "certifications",
+    "publications"
   ],
   "well_written_sections": [
-    "experience: clearly describes job responsibilities and achievements",
-    "education: provides relevant degree and institution information",
-    "skills: effectively categorizes and lists technical skills"
+    "experience: clear and concise job descriptions",
+    "education: relevant and formatted correctly",
+    "skills: well-organized and easy to read"
   ],
-  "llm_evaluation": 7,
-  "skills_sentiment_summary": "strong technical skills",
+  "llm_evaluation": 8,
+  "skills_sentiment_summary": "Strong technical skills",
   "improvement_suggestions": [
-    "add a professional summary",
-    "include relevant certifications",
-    "quantify achievements in experience section",
-    "consider adding relevant tools or software to skills section",
-    "reorganize hobbies section to be more concise and impactful"
+    "Add a professional summary to highlight key strengths",
+    "Consider adding relevant certifications or publications",
+    "Quantify achievements in experience section",
+    "Remove hobbies_interests section or replace with relevant volunteer experience"
   ],
   "resume_data": {
     "personal_info": {
@@ -101,6 +101,6 @@
     "achievements_impact": 0,
     "skills_matching": 10,
     "formatting_structure": 5,
-    "llm_evaluation": 7
+    "llm_evaluation": 8
   }
 }
