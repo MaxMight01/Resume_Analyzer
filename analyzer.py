@@ -51,6 +51,7 @@ Analyze the following resume text and return a JSON with the following fields:
 - sections_detected: list of strings
 - missing_sections: list of strings
 - well_written_sections: list of strings (and give reasons as short strings)
+- llm_evaluation: integer between 0 and 10
 - skills_sentiment_summary: short string
 - improvement_suggestions: list of short strings
 
