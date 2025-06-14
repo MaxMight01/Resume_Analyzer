@@ -61,9 +61,20 @@ def generate_pdf_report(json_path, output_path):
 
     # Score summary
     pdf.section_title("Score Breakdown")
-    for k, v in score.items():
-        label = k.replace("_", " ").capitalize()
-        pdf.section_body(f"{label}: {v}/100" if k == "total_score" else f"{label}: {v}")
+
+    score_labels = {
+        "total_score": "Total Score (/100)",
+        "section_completeness": "Section Completeness (/25)",
+        "content_richness": "Content Richness (/25)",
+        "clarity_professionalism": "Clarity & Professionalism (/25)",
+        "role_alignment": "Role Alignment (/25)"
+    }
+
+    for key in ["total_score", "section_completeness", "content_richness", "clarity_professionalism", "role_alignment"]:
+        if key in score:
+            label = score_labels[key]
+            suffix = "/100" if key == "total_score" else "/25"
+            pdf.section_body(f"{label}: {score[key]}{suffix}")
 
     # Strengths and suggestions
     pdf.section_title("Well-Written Sections")

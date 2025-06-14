@@ -1,32 +1,4 @@
 {
-  "sections_detected": [
-    "personal_info",
-    "experience",
-    "education",
-    "awards_recognition",
-    "skills",
-    "projects",
-    "other_highlights",
-    "hobbies_interests"
-  ],
-  "missing_sections": [
-    "summary_objective",
-    "certifications",
-    "publications"
-  ],
-  "well_written_sections": [
-    "experience: clear and concise job descriptions",
-    "education: relevant and formatted correctly",
-    "skills: well-organized and easy to read"
-  ],
-  "llm_evaluation": 8,
-  "skills_sentiment_summary": "Strong technical skills",
-  "improvement_suggestions": [
-    "Add a professional summary to highlight key strengths",
-    "Consider adding relevant certifications or publications",
-    "Quantify achievements in experience section",
-    "Remove hobbies_interests section or replace with relevant volunteer experience"
-  ],
   "resume_data": {
     "personal_info": {
       "name": "John Doe",
@@ -36,13 +8,13 @@
     },
     "experience": [
       {
-        "title": "Senior Software Engineer",
+        "job_title": "Senior Software Engineer",
         "company": "Dream Company",
         "duration": "August 1999 onwards",
         "details": "Co-designer and co-implementor of five successive generations of Google\u2019s crawling indexing and query retrieval systems."
       },
       {
-        "title": "Senior Member of Technical Staff",
+        "job_title": "Senior Member of Technical Staff",
         "company": "Old Dream Company",
         "duration": "February 1999 to August 1999",
         "details": "Designer and implementor of a system for retrieving and caching electronic commerce content including a crawler and custom full-text indexing system that allows flexible keyword searching of product information."
@@ -50,12 +22,12 @@
     ],
     "education": [
       {
-        "institution": "University of Washington",
+        "institution_name": "University of Washington",
         "degree": "Ph.D. Computer Science",
         "year": 1996
       },
       {
-        "institution": "University of Minnesota",
+        "institution_name": "University of Minnesota",
         "degree": "B.S. Computer Engineering",
         "year": 1990
       }
@@ -81,26 +53,51 @@
     ],
     "projects": [
       {
-        "title": "Tensorflow",
+        "project_title": "Tensorflow",
         "description": "An open-source machine-learning software library"
       },
       {
-        "title": "LevelDB",
+        "project_title": "LevelDB",
         "description": "An open-source on-disk key-value store"
       },
       {
-        "title": "Spanner",
+        "project_title": "Spanner",
         "description": "A scalable, multi-version, globally distributed, and synchronously replicated database"
       }
     ]
   },
+  "sections_detected": [
+    "EXPERIENCE",
+    "EDUCATION",
+    "AWARDS & RECOGNITION",
+    "SKILLS",
+    "PROJECTS",
+    "OTHER HIGHLIGHTS",
+    "HOBBIES & INTERESTS"
+  ],
+  "missing_sections": [
+    "SUMMARY/OBJECTIVE",
+    "CERTIFICATIONS",
+    "REFERENCES"
+  ],
+  "well_written_sections": [
+    "EXPERIENCE: Clear job descriptions and technical details",
+    "SKILLS: Comprehensive list of technical skills",
+    "PROJECTS: Detailed project descriptions and technologies used"
+  ],
+  "skills_sentiment_summary": "Strong technical foundation",
+  "improvement_suggestions": [
+    "Add a professional summary or objective statement",
+    "Include relevant certifications or licenses",
+    "Quantify achievements and impact in experience section",
+    "Use action verbs consistently throughout the experience section",
+    "Consider adding relevant volunteer or extracurricular activities"
+  ],
   "score_breakdown": {
-    "total_score": 70,
-    "content_completeness": 22.5,
-    "relevance_specificity": 25,
-    "achievements_impact": 0,
-    "skills_matching": 10,
-    "formatting_structure": 5,
-    "llm_evaluation": 8
+    "section_completeness": 20,
+    "content_richness": 22,
+    "clarity_professionalism": 20,
+    "role_alignment": 18,
+    "total_score": 80
   }
 }

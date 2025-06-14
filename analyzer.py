@@ -51,20 +51,25 @@ Analyze the following resume text and return a JSON with the following fields:
 - sections_detected: list of strings
 - missing_sections: list of strings
 - well_written_sections: list of strings (and give reasons as short strings)
-- llm_evaluation: integer between 0 and 10
 - skills_sentiment_summary: short string
 - improvement_suggestions: list of short strings
 - resume_data: additionally, extract the resume into a nested JSON object with structured data using this (strict) schema:
   - personal_info: name, email, mobile, location
-  - experience: only title, company, duration, details
-  - education: only institution, degree, year
-  - skills: list of technical and soft skills
+  - experience: only job title, company, duration, details
+  - education: only institution name, degree, year
+  - skills: list of technical and soft skills individually listed
   - projects: only project titles and descriptions
+- score_breakdown: include a final field named "score_breakdown", which should contain:
+  - total_score: integer between 0 and 100 (sum of the other fields)
+  - section_completeness: score out of 25
+  - content_richness: score out of 25
+  - clarity_professionalism: score out of 25
+  - role_alignment: score out of 25
 
-Resume text:
+RESUME TEXT:
 \"\"\"
 {resume_text}
 \"\"\"
 
-Respond ONLY with a JSON object matching the above structure. Be slightly more critical in your analysis.
+Respond ONLY with a JSON object matching the above structure. Be slightly more critical in your analysis. Be more critical in your scoring and justify your scoring in your evaluation.
     """.strip()
